@@ -24,7 +24,9 @@ Directions:
 3. Then type the following as your next command in your command prompt:
 
         docker run --name <the_image_name> -d -p 5000:5000 sejalpatrikar/etlserver
+	
 	curl http://localhost:5000
+	
 	docker logs <the_image_name> > output.log
         
     The file "output.log" contains the output of the script. 

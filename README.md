@@ -19,6 +19,6 @@ Directions:
 
 	docker pull sejalpatrikar/etlserver:latest
 	
-This can also be found at https://hub.docker.com/r/sejalpatrikar/etlserver/tags?page=1&ordering=last_updated
+   This can also be found at https://hub.docker.com/r/sejalpatrikar/etlserver/tags?page=1&ordering=last_updated
 
 3. Retrieving json file??

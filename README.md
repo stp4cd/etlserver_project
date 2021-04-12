@@ -9,6 +9,7 @@ This container performs part of the ETL pipeline and completes the following:
 - writes the file to disk.
 
 How to use this container?
+
 Directions: 
 
 1. Open up command prompt. 

@@ -16,9 +16,9 @@ Directions:
 
 1. Open up command prompt. 
 2. Type this line into the command prompt to pull the container:
-
+	```
 	docker pull sejalpatrikar/etlserver:latest
-	
+	```
    This can also be found at https://hub.docker.com/r/sejalpatrikar/etlserver/tags?page=1&ordering=last_updated
 
 3. Then, run the container in detached mode using the following command:

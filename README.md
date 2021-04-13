@@ -23,7 +23,7 @@ Directions:
 
 3. Then, run the container in detached mode using the following command:
 
-        docker run --name <the_image_name> -d -p 5000:5000 sejalpatrikar/etlserver
+        docker run --name <the_container_name> -d -p 5000:5000 sejalpatrikar/etlserver
 
 4. The container image should be accessible on port 5000. Use following command: 
 	```

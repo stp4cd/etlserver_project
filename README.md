@@ -35,7 +35,7 @@ Directions:
 	```
    The file "output.log" contains the stdout output of the script.
                 
-4. The file written by the container is "usa_2006.json".  Retrieve the JSON file using the following command:
+4. The file written by the container is "usa_2006.json". Retrieve the JSON file using the following command:
 	```
 	docker cp <the_image_name>:/code/usa_2006.json
 	```

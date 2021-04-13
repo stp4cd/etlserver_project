@@ -25,7 +25,7 @@ Directions:
 
         docker run --name <the_container_name> -d -p 5000:5000 sejalpatrikar/etlserver
 
-4. The container image should be accessible on port 5000. Use following command: 
+4. The container should be accessible on port 5000. Use following command: 
 	```
 	curl http://localhost:5000
 	```

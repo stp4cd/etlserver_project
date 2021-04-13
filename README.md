@@ -38,7 +38,7 @@ Directions:
 4. Retrieve the JSON file using the following command:
 	```
 	docker cp <the_image_name>:/code/usa_2006.json
-        ```
+       ```
 
    
    The file written by the container is "usa_2006.json". 

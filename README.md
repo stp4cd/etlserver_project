@@ -6,33 +6,38 @@ The data processed in this ETL Data Processor contains records of Olympic medals
 This container performs part of the ETL pipeline process and completes the following: 
 - Remotely fetches Olympic medal data from a url as a csv file
 - Removes the 'Discipline' and 'Event' columns
-- Provides summary information regarding medals won by the USA
+- Provides summary information regarding medals won by the USA in 2006
 - Converts the csv file to a json file
 - Writes the file to disk
 
-How to use this container?
+# How to use this container?
 
 Directions: 
 
 1. Open up command prompt. 
-2. Type this line into the command prompt and press enter:
+2. Type this line into the command prompt to pull the container:
 
 	docker pull sejalpatrikar/etlserver:latest
 	
    This can also be found at https://hub.docker.com/r/sejalpatrikar/etlserver/tags?page=1&ordering=last_updated
 
-3. Then type the following as your next command in your command prompt:
+3. Then, run the container in detached mode using the following command:
 
         docker run --name <the_image_name> -d -p 5000:5000 sejalpatrikar/etlserver
+
+4. The container image should be accessible on port 5000. Use following command: 
 	
 	curl http://localhost:5000
 	
+5. The logs can be viewed using the following command: 
+	
 	docker logs <the_image_name> > output.log
-        
-    The file "output.log" contains the output of the script. 
-    
-4. Retrieve the JSON file
+	
+   The file "output.log" contains the stdout output of the script.
+                
+4. Retrieve the JSON file using the following command:
         
 	docker cp <the_image_name>:/code/usa_2006.json
    
-    The file written by the container is "usa_2006.json".
+   The file written by the container is "usa_2006.json". 
+   

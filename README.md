@@ -31,13 +31,13 @@ Directions:
 	```
 5. The logs can be viewed using the following command: 
 	```
-	docker logs <the_image_name> > output.log
+	docker logs <the_container_name> > output.log
 	```
    The file "output.log" contains the stdout output of the script.
                 
 6. The file written by the container is "usa_2006.json". Retrieve the JSON file using the following command:
 	```
-	docker cp <the_image_name>:/code/usa_2006.json .
+	docker cp <the_container_name>:/code/usa_2006.json .
 	```
 
    
